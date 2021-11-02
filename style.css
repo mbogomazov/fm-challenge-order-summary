@@ -151,10 +151,63 @@ p {
 
 
 .attribution {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 450px) {
+    body {
+        background-size: cover;
+        background-position: 0 -40vh;
+    }
+
+    .card {
+        border-radius: 15px;
+        max-width: 325px;
+        height: 565px;
+    }
+
+    .header-image {
+        max-height: 160px;
+    }
+
+    .content-wrapper {
+        padding: 0 15px;
+    }
+
+    .card-title {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .card-description {
+        line-height: 1.5;
+    }
+
+    .subscription-plan-wrapper {
+        padding: 15px;
+    }
+
+    .buttons-wrapper {
+        margin-top: 10px;
+    }
+
+    .btn.primary-button {
+        padding: 20px 55px;
+        margin-bottom: 15px;
+    }
+
+    .attribution {
+        display: none;
+    }
+
 }
