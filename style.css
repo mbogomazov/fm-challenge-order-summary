@@ -32,7 +32,6 @@ p {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     -webkit-box-shadow: 0px 0px 30px 16px rgba(165, 165, 165, 0.17);
     -moz-box-shadow: 0px 0px 30px 16px rgba(165, 165, 165, 0.17);
@@ -43,16 +42,23 @@ p {
     padding: 0 50px;
 }
 
-img.header {
+.header-image {
     max-height: 220px;
     width: 100%;
 }
 
-h2 {
+.card-title {
     font-family: 'Red Hat Display', sans-serif;
     margin-top: 45px;
     margin-bottom: 20px;
     color: #172a4a;
+}
+
+.card-description {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #7e8397;
+    line-height: 1.8;
 }
 
 
@@ -66,40 +72,32 @@ h2 {
     padding: 30px 25px;
 }
 
-.text-wrapper {
+.plan-info-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-h3 {
+.plan-info-wrapper .plan-title {
     margin: 0;
     margin-bottom: 7px;
     color: #172a4a;
 }
 
-span {
+.plan-price {
     color: #7e8397;
     font-size: 15px;
 }
 
-a {
+.price-change-link {
     transition: all 0.4s ease-in-out;
     color: #2e23a6;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
 }
 
-a:active {
+.price-change-link:active {
     text-decoration: none;
     color: #7972d2;
-}
-
-
-p {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #7e8397;
-    line-height: 1.8;
 }
 
 
@@ -110,7 +108,7 @@ p {
     flex-direction: column;
 }
 
-button {
+.btn {
     font-family: 'Red Hat Display', sans-serif;
     cursor: pointer;
     outline: none;
@@ -148,4 +146,15 @@ button {
 .btn.text-button:active {
     transition: all 0.4s ease-in-out;
     color: #3e33ad;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
