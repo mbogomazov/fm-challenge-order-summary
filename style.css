@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:  url('images/pattern-background-desktop.svg'), #e0e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+.card {
+    border-radius: 15px;
+    max-width: 455px;
+    height: 700px;
+    background-color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 30px 16px rgba(165, 165, 165, 0.17);
+    -moz-box-shadow: 0px 0px 30px 16px rgba(165, 165, 165, 0.17);
+    box-shadow: 0px 0px 30px 16px rgba(165, 165, 165, 0.17);
+}
+
+.content-wrapper {
+    padding: 0 50px;
+}
+
+img.header {
+    max-height: 220px;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: #172a4a;
+}
+
+
+
+.subscription-plan-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fe;
+    border-radius: 15px;
+    padding: 30px 25px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 7px;
+    color: #172a4a;
+}
+
+span {
+    color: #7e8397;
+    font-size: 15px;
+}
+
+a {
+    transition: all 0.4s ease-in-out;
+    color: #2e23a6;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+    color: #7972d2;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #7e8397;
+    line-height: 1.8;
+}
+
+
+
+.buttons-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.btn.primary-button {
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #382ae1;
+    color: white;
+    margin: 15px;
+    margin-bottom: 25px;
+    padding: 15px 60px;
+    font-size: 15px;
+    -webkit-box-shadow: 0px 20px 21px 22px rgba(110, 110, 110, 0.17);
+    -moz-box-shadow: 0px 20px 21px 22px rgba(110, 110, 110, 0.17);
+    box-shadow: 0px 20px 21px 22px rgba(110, 110, 110, 0.17);
+}
+
+.btn.primary-button:active {
+    transition: all 0.4s ease-in-out;
+    background-color: #766cf1;
+}
+
+.btn.text-button {
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    color: #73798f;
+    font-size: 15px;
+}
+
+.btn.text-button:active {
+    transition: all 0.4s ease-in-out;
+    color: #3e33ad;
+}
